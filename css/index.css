@@ -1,0 +1,121 @@
+/* Estilo existente */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+
+.navbar {
+    padding: 1rem;
+}
+body{
+    background: rgb(238,228,255);
+background: radial-gradient(circle, rgba(238,228,255,1) 0%, rgba(160,124,228,1) 100%);
+}
+.quicksand.body {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.search-container {
+    position: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.search-container input[type="text"] {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background: rgb(255,222,0);
+    background: radial-gradient(circle, rgba(255,222,0,1) 0%, rgba(255,176,0,1) 100%);
+    color: #8b5b34;
+    font-size: 16px;
+    outline: none;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #8b5b34;
+}
+
+.search-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-container button i {
+    color: #7030a0;
+    font-size: 20px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 24;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.site-header {
+    background: rgb(255,222,0);
+    background: radial-gradient(circle, rgba(255,222,0,1) 0%, rgba(255,176,0,1) 100%);
+    height: 70px; /* Aumenta a altura da barra */
+    padding: 10px 0;
+}
+
+.site-header a {
+    color: #8b5b34; /* Cor do texto */
+    padding: 0; /* Remova o padding */
+    margin-top: 20px; /* Ajuste para mover o texto para cima */
+    line-height: normal;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    /* Centraliza verticalmente o texto */
+}
+
+.site-header a:hover {
+    color: #4e2b0f;
+    text-decoration: none; /* Cor de destaque ao passar o mouse */
+}
+
+/* Adicionando divisões entre os itens do menu */
+.site-header a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: #8b5b34; /* Cor da divisão */
+}
